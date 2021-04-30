@@ -1,5 +1,4 @@
 
-
 local MiraHub = Instance.new("ScreenGui")
 local Credit = Instance.new("Frame")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
@@ -20,7 +19,7 @@ local adw = Instance.new("Frame")
 --Properties:
 
 MiraHub.Name = "Mira Hub"
-MiraHub.Parent = game.Workspace
+MiraHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 MiraHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Credit.Name = "Credit"
@@ -162,3 +161,22 @@ adw.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 adw.Position = UDim2.new(0, 0, 0.284738034, 0)
 adw.Size = UDim2.new(0, 667, 0, 218)
 adw.Visible = false
+
+local 1_Open = false
+
+function Clicked()
+	if 1_Open == false then
+		1_Open = true
+		Main.Visible = true
+		Main.BackgroundTransparency = 0.1
+		Open.Text = "Close"
+	elseif Open == true then
+		1_Open = false
+		Main.Visible = false
+		Main.BackgroundTransparency = 0.1
+		Open.Text = "Open"
+	end
+end
+
+
+Button.MouseButton1Click:connect(Clicked)
