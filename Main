@@ -1,0 +1,164 @@
+
+
+local MiraHub = Instance.new("ScreenGui")
+local Credit = Instance.new("Frame")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local credit = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MiraHub_2 = Instance.new("TextLabel")
+local de_dollie = Instance.new("TextLabel")
+local Open = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local Tab = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Money = Instance.new("TextButton")
+local Frame1 = Instance.new("Frame")
+local SetMoney = Instance.new("TextBox")
+local adw = Instance.new("Frame")
+
+--Properties:
+
+MiraHub.Name = "Mira Hub"
+MiraHub.Parent = game.Workspace
+MiraHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Credit.Name = "Credit"
+Credit.Parent = MiraHub
+Credit.AnchorPoint = Vector2.new(0.5, 0.5)
+Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit.BackgroundTransparency = 1.000
+Credit.BorderSizePixel = 0
+Credit.ClipsDescendants = true
+Credit.Position = UDim2.new(0.109999999, 0, 0.921999991, 0)
+Credit.Size = UDim2.new(0.200000003, 0, 0.105999999, 0)
+
+UIAspectRatioConstraint.Parent = Credit
+UIAspectRatioConstraint.AspectRatio = 4.529
+
+credit.Name = "credit"
+credit.Parent = Credit
+credit.Active = true
+credit.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
+credit.BackgroundTransparency = 0.200
+credit.BorderSizePixel = 0
+credit.Size = UDim2.new(1, 0, 1, 0)
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = credit
+
+MiraHub_2.Name = "Mira Hub"
+MiraHub_2.Parent = credit
+MiraHub_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MiraHub_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiraHub_2.BackgroundTransparency = 1.000
+MiraHub_2.BorderSizePixel = 0
+MiraHub_2.Position = UDim2.new(0.462031603, 0, 0.634872854, 0)
+MiraHub_2.Size = UDim2.new(0.874652863, 0, 0.530253053, 0)
+MiraHub_2.Font = Enum.Font.GothamSemibold
+MiraHub_2.Text = "Mira Hub"
+MiraHub_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MiraHub_2.TextScaled = true
+MiraHub_2.TextSize = 14.000
+MiraHub_2.TextWrapped = true
+MiraHub_2.TextXAlignment = Enum.TextXAlignment.Left
+
+de_dollie.Name = "de_dollie"
+de_dollie.Parent = credit
+de_dollie.AnchorPoint = Vector2.new(0.5, 0.5)
+de_dollie.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+de_dollie.BackgroundTransparency = 1.000
+de_dollie.BorderSizePixel = 0
+de_dollie.Position = UDim2.new(0.342530489, 0, 0.227484107, 0)
+de_dollie.Size = UDim2.new(0.629048109, 0, 0.28452602, 0)
+de_dollie.Font = Enum.Font.GothamSemibold
+de_dollie.Text = "By: de_dollie"
+de_dollie.TextColor3 = Color3.fromRGB(255, 255, 255)
+de_dollie.TextScaled = true
+de_dollie.TextSize = 14.000
+de_dollie.TextWrapped = true
+de_dollie.TextXAlignment = Enum.TextXAlignment.Left
+
+Open.Name = "Open"
+Open.Parent = Credit
+Open.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+Open.Position = UDim2.new(0.596793354, 0, 0.161350533, 0)
+Open.Size = UDim2.new(0, 116, 0, 50)
+Open.Visible = false
+Open.Font = Enum.Font.GothamSemibold
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextSize = 33.000
+wait(5)
+Open.Visible = true
+
+Main.Name = "Main"
+Main.Parent = MiraHub
+Main.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
+Main.BackgroundTransparency = 0.100
+Main.Position = UDim2.new(0.6113199, 0, 0.626064777, 0)
+Main.Size = UDim2.new(0, 673, 0, 439)
+Main.Visible = false
+
+Tab.Name = "Tab"
+Tab.Parent = Main
+Tab.BackgroundColor3 = Color3.fromRGB(49, 51, 59)
+Tab.Size = UDim2.new(0, 673, 0, 45)
+
+TextLabel.Parent = Tab
+TextLabel.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 200, 0, 45)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Mira Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 45.000
+
+TextLabel_2.Parent = Tab
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.75185734, 0, 0.288888901, 0)
+TextLabel_2.Size = UDim2.new(0, 161, 0, 32)
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "By: de_dollie"
+TextLabel_2.TextColor3 = Color3.fromRGB(158, 158, 158)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 25.000
+TextLabel_2.TextTransparency = 0.400
+TextLabel_2.TextWrapped = true
+
+Money.Name = "Money"
+Money.Parent = Main
+Money.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
+Money.BackgroundTransparency = 0.600
+Money.Position = UDim2.new(0, 0, 0.102505691, 0)
+Money.Size = UDim2.new(0, 200, 0, 50)
+Money.Font = Enum.Font.Jura
+Money.Text = "Set Money"
+Money.TextColor3 = Color3.fromRGB(255, 255, 255)
+Money.TextSize = 36.000
+
+Frame1.Name = "Frame1"
+Frame1.Parent = Main
+Frame1.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Frame1.BackgroundTransparency = 0.250
+Frame1.Position = UDim2.new(0, 0, 0.216400906, 0)
+Frame1.Size = UDim2.new(0, 673, 0, 5)
+
+SetMoney.Name = "Set Money"
+SetMoney.Parent = Main
+SetMoney.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
+SetMoney.BackgroundTransparency = 0.500
+SetMoney.Position = UDim2.new(0.313521534, 0, 0.102505691, 0)
+SetMoney.Size = UDim2.new(0, 436, 0, 50)
+SetMoney.Font = Enum.Font.GothamSemibold
+SetMoney.Text = "How Many Money You want?"
+SetMoney.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetMoney.TextSize = 26.000
+
+adw.Name = "adw"
+adw.Parent = Main
+adw.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+adw.Position = UDim2.new(0, 0, 0.284738034, 0)
+adw.Size = UDim2.new(0, 667, 0, 218)
+adw.Visible = false
