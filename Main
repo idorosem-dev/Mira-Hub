@@ -1,4 +1,3 @@
-
 local MiraHub = Instance.new("ScreenGui")
 local Credit = Instance.new("Frame")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
@@ -11,12 +10,29 @@ local Main = Instance.new("Frame")
 local Tab = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local Money = Instance.new("TextButton")
+local SetSpeed = Instance.new("TextButton")
 local Frame1 = Instance.new("Frame")
-local SetMoney = Instance.new("TextBox")
-local adw = Instance.new("Frame")
-
---Properties:
+local Speed = Instance.new("TextBox")
+local Frame1_2 = Instance.new("Frame")
+local SetJump = Instance.new("TextButton")
+local jump = Instance.new("TextBox")
+local Fly = Instance.new("TextButton")
+local Frame1_3 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Killall = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame1_4 = Instance.new("Frame")
+local Killplayer = Instance.new("TextBox")
+local Kill = Instance.new("TextButton")
+local Frame1_5 = Instance.new("Frame")
+local Jail = Instance.new("TextButton")
+local jailplayer = Instance.new("TextBox")
+local Frame1_6 = Instance.new("Frame")
+local Killall_2 = Instance.new("TextButton")
+local Premium = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local Lock = Instance.new("TextLabel")
 
 MiraHub.Name = "Mira Hub"
 MiraHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -81,23 +97,19 @@ de_dollie.TextXAlignment = Enum.TextXAlignment.Left
 Open.Name = "Open"
 Open.Parent = Credit
 Open.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
-Open.Position = UDim2.new(0.596793354, 0, 0.161350533, 0)
-Open.Size = UDim2.new(0, 116, 0, 50)
-Open.Visible = false
+Open.Position = UDim2.new(0.596793354, 0, 0.357335389, 0)
+Open.Size = UDim2.new(0, 113, 0, 25)
 Open.Font = Enum.Font.GothamSemibold
-Open.Text = "Open"
+Open.Text = "3.0"
 Open.TextColor3 = Color3.fromRGB(255, 255, 255)
 Open.TextSize = 33.000
-wait(5)
-Open.Visible = true
 
 Main.Name = "Main"
 Main.Parent = MiraHub
 Main.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
 Main.BackgroundTransparency = 0.100
-Main.Position = UDim2.new(0.6113199, 0, 0.626064777, 0)
+Main.Position = UDim2.new(0.670405805, 0, 0.631175518, 0)
 Main.Size = UDim2.new(0, 673, 0, 439)
-Main.Visible = false
 
 Tab.Name = "Tab"
 Tab.Parent = Main
@@ -126,16 +138,16 @@ TextLabel_2.TextSize = 25.000
 TextLabel_2.TextTransparency = 0.400
 TextLabel_2.TextWrapped = true
 
-Money.Name = "Money"
-Money.Parent = Main
-Money.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
-Money.BackgroundTransparency = 0.600
-Money.Position = UDim2.new(0, 0, 0.102505691, 0)
-Money.Size = UDim2.new(0, 200, 0, 50)
-Money.Font = Enum.Font.Jura
-Money.Text = "Set Money"
-Money.TextColor3 = Color3.fromRGB(255, 255, 255)
-Money.TextSize = 36.000
+SetSpeed.Name = "Set Speed"
+SetSpeed.Parent = Main
+SetSpeed.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
+SetSpeed.BackgroundTransparency = 0.600
+SetSpeed.Position = UDim2.new(0, 0, 0.102505691, 0)
+SetSpeed.Size = UDim2.new(0, 200, 0, 50)
+SetSpeed.Font = Enum.Font.Jura
+SetSpeed.Text = "set speed"
+SetSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetSpeed.TextSize = 36.000
 
 Frame1.Name = "Frame1"
 Frame1.Parent = Main
@@ -144,39 +156,247 @@ Frame1.BackgroundTransparency = 0.250
 Frame1.Position = UDim2.new(0, 0, 0.216400906, 0)
 Frame1.Size = UDim2.new(0, 673, 0, 5)
 
-SetMoney.Name = "Set Money"
-SetMoney.Parent = Main
-SetMoney.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
-SetMoney.BackgroundTransparency = 0.500
-SetMoney.Position = UDim2.new(0.313521534, 0, 0.102505691, 0)
-SetMoney.Size = UDim2.new(0, 436, 0, 50)
-SetMoney.Font = Enum.Font.GothamSemibold
-SetMoney.Text = "How Many Money You want?"
-SetMoney.TextColor3 = Color3.fromRGB(255, 255, 255)
-SetMoney.TextSize = 26.000
+Speed.Name = "Speed"
+Speed.Parent = Main
+Speed.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
+Speed.BackgroundTransparency = 0.500
+Speed.Position = UDim2.new(0.313521534, 0, 0.102505691, 0)
+Speed.Size = UDim2.new(0, 436, 0, 50)
+Speed.Font = Enum.Font.GothamSemibold
+Speed.Text = "16"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextSize = 26.000
 
-adw.Name = "adw"
-adw.Parent = Main
-adw.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-adw.Position = UDim2.new(0, 0, 0.284738034, 0)
-adw.Size = UDim2.new(0, 667, 0, 218)
-adw.Visible = false
+Frame1_2.Name = "Frame1"
+Frame1_2.Parent = Main
+Frame1_2.BackgroundColor3 = Color3.fromRGB(254, 254, 83)
+Frame1_2.BackgroundTransparency = 0.250
+Frame1_2.Position = UDim2.new(0, 0, 0.341685653, 0)
+Frame1_2.Size = UDim2.new(0, 673, 0, 5)
 
-local 1_Open = false
+SetJump.Name = "Set Jump"
+SetJump.Parent = Main
+SetJump.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
+SetJump.BackgroundTransparency = 0.600
+SetJump.Position = UDim2.new(0, 0, 0.227790415, 0)
+SetJump.Size = UDim2.new(0, 200, 0, 50)
+SetJump.Font = Enum.Font.Jura
+SetJump.Text = "set jump"
+SetJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetJump.TextSize = 36.000
 
-function Clicked()
-	if 1_Open == false then
-		1_Open = true
-		Main.Visible = true
-		Main.BackgroundTransparency = 0.1
-		Open.Text = "Close"
-	elseif Open == true then
-		1_Open = false
-		Main.Visible = false
-		Main.BackgroundTransparency = 0.1
-		Open.Text = "Open"
+jump.Name = "jump"
+jump.Parent = Main
+jump.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
+jump.BackgroundTransparency = 0.500
+jump.Position = UDim2.new(0.313521534, 0, 0.227790415, 0)
+jump.Size = UDim2.new(0, 436, 0, 50)
+jump.Font = Enum.Font.GothamSemibold
+jump.Text = "50"
+jump.TextColor3 = Color3.fromRGB(255, 255, 255)
+jump.TextSize = 26.000
+
+Fly.Name = "Fly"
+Fly.Parent = Main
+Fly.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
+Fly.BackgroundTransparency = 0.600
+Fly.Position = UDim2.new(0.341753334, 0, 0.353075147, 0)
+Fly.Size = UDim2.new(0, 200, 0, 50)
+Fly.Font = Enum.Font.Jura
+Fly.Text = "Fly: off"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 36.000
+
+Frame1_3.Name = "Frame1"
+Frame1_3.Parent = Main
+Frame1_3.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Frame1_3.BackgroundTransparency = 0.250
+Frame1_3.Position = UDim2.new(0, 0, 0.466970384, 0)
+Frame1_3.Size = UDim2.new(0, 673, 0, 5)
+
+UICorner_2.CornerRadius = UDim.new(0, 10)
+UICorner_2.Parent = Main
+
+Killall.Name = "Kill all"
+Killall.Parent = Main
+Killall.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
+Killall.BackgroundTransparency = 0.600
+Killall.Position = UDim2.new(0.341753334, 0, 0.478359878, 0)
+Killall.Size = UDim2.new(0, 200, 0, 50)
+Killall.Font = Enum.Font.Jura
+Killall.Text = "Kill all"
+Killall.TextColor3 = Color3.fromRGB(255, 255, 255)
+Killall.TextSize = 36.000
+
+ImageLabel.Parent = Main
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.943536401, 0, 0.27334851, 0)
+ImageLabel.Size = UDim2.new(0, 38, 0, 35)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6495659621"
+
+Frame1_4.Name = "Frame1"
+Frame1_4.Parent = Main
+Frame1_4.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Frame1_4.BackgroundTransparency = 0.250
+Frame1_4.Position = UDim2.new(0, 0, 0.580865622, 0)
+Frame1_4.Size = UDim2.new(0, 673, 0, 5)
+
+Killplayer.Name = "Kill player"
+Killplayer.Parent = Main
+Killplayer.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
+Killplayer.BackgroundTransparency = 0.500
+Killplayer.Position = UDim2.new(0.313521534, 0, 0.592255116, 0)
+Killplayer.Size = UDim2.new(0, 436, 0, 50)
+Killplayer.Font = Enum.Font.GothamSemibold
+Killplayer.Text = "Enter a Username..."
+Killplayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+Killplayer.TextSize = 26.000
+
+Kill.Name = "Kill"
+Kill.Parent = Main
+Kill.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
+Kill.BackgroundTransparency = 0.600
+Kill.Position = UDim2.new(0, 0, 0.585421443, 0)
+Kill.Size = UDim2.new(0, 200, 0, 50)
+Kill.Font = Enum.Font.Jura
+Kill.Text = "Kill"
+Kill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Kill.TextSize = 36.000
+
+Frame1_5.Name = "Frame1"
+Frame1_5.Parent = Main
+Frame1_5.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Frame1_5.BackgroundTransparency = 0.250
+Frame1_5.Position = UDim2.new(0, 0, 0.703872442, 0)
+Frame1_5.Size = UDim2.new(0, 673, 0, 5)
+
+Jail.Name = "Jail"
+Jail.Parent = Main
+Jail.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
+Jail.BackgroundTransparency = 0.600
+Jail.Position = UDim2.new(0, 0, 0.715261996, 0)
+Jail.Size = UDim2.new(0, 200, 0, 50)
+Jail.Font = Enum.Font.Jura
+Jail.Text = "Jail"
+Jail.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jail.TextSize = 36.000
+
+jailplayer.Name = "jail player"
+jailplayer.Parent = Main
+jailplayer.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
+jailplayer.BackgroundTransparency = 0.500
+jailplayer.Position = UDim2.new(0.313521534, 0, 0.715261936, 0)
+jailplayer.Size = UDim2.new(0, 436, 0, 50)
+jailplayer.Font = Enum.Font.GothamSemibold
+jailplayer.Text = "Enter a Username..."
+jailplayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+jailplayer.TextSize = 26.000
+
+Frame1_6.Name = "Frame1"
+Frame1_6.Parent = Main
+Frame1_6.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Frame1_6.BackgroundTransparency = 0.250
+Frame1_6.Position = UDim2.new(0, 0, 0.829157174, 0)
+Frame1_6.Size = UDim2.new(0, 673, 0, 5)
+
+Killall_2.Name = "Kill all"
+Killall_2.Parent = Main
+Killall_2.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
+Killall_2.BackgroundTransparency = 0.600
+Killall_2.Position = UDim2.new(0.341753334, 0, 0.838268757, 0)
+Killall_2.Size = UDim2.new(0, 200, 0, 50)
+Killall_2.Font = Enum.Font.Jura
+Killall_2.Text = "Jail all"
+Killall_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Killall_2.TextSize = 36.000
+
+Premium.Name = "Premium"
+Premium.Parent = Main
+Premium.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Premium.BackgroundTransparency = 0.400
+Premium.Position = UDim2.new(0, 0, 0.357630968, 0)
+Premium.Size = UDim2.new(0, 673, 0, 281)
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = Premium
+
+ImageLabel_2.Parent = Premium
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.395245165, 0, 0.088967979, 0)
+ImageLabel_2.Size = UDim2.new(0, 127, 0, 125)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=6088994136"
+
+Lock.Name = "Lock"
+Lock.Parent = Premium
+Lock.BackgroundColor3 = Color3.fromRGB(49, 51, 59)
+Lock.BackgroundTransparency = 0.450
+Lock.Position = UDim2.new(0.24814263, 0, 0.508896768, 0)
+Lock.Size = UDim2.new(0, 354, 0, 50)
+Lock.Font = Enum.Font.GothamSemibold
+Lock.Text = "Can't Use it in free edition"
+Lock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lock.TextSize = 29.000
+
+-- Scripts:
+
+local function FDDS_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	-- HOW TO DO --
+	-- 1. Insert a ScreenGui then drag it into the StarterGui
+	-- 2. Insert a Frame
+	-- 3. Insert TextButton
+	-- 4. Insert a Local Script inside the TextButton
+	
+	-- LocalScript:
+	
+	local Open = false
+	local Frame = script.Parent.Parent.Parent.Main
+	local Button = script.Parent
+	
+	function Clicked()
+		if Open == false then
+			Open = true
+			Frame.Visible = true
+			Frame.BackgroundTransparency = 0.1
+			Button.Text = "Close" -- Closes the Frame
+		elseif Open == true then
+			Open = false
+			Frame.Visible = false
+			Frame.BackgroundTransparency = 0.1
+			Button.Text = "Open" -- Opens the Frame
+		end
 	end
+	
+	
+	Button.MouseButton1Click:connect(Clicked)
 end
+coroutine.wrap(FDDS_fake_script)()
+local function AHNT_fake_script() -- SetSpeed.LocalScript 
+	local script = Instance.new('LocalScript', SetSpeed)
 
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.Speed.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.WalkSpeed = setspeed
+		end
+	end)
+end
+coroutine.wrap(AHNT_fake_script)()
+local function LXTRPAN_fake_script() -- SetJump.LocalScript 
+	local script = Instance.new('LocalScript', SetJump)
 
-Button.MouseButton1Click:connect(Clicked)
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setjump = script.Parent.Parent.jump.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.JumpPower = setjump
+		end
+	end)
+end
+coroutine.wrap(LXTRPAN_fake_script)()
