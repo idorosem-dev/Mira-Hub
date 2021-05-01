@@ -772,4 +772,3 @@ local function QTPKYU_fake_script()
 	
 	script.Parent.MouseButton1Click:connect(Clicked)
 end
-coroutine.wrap(QTPKYU_fake_script)()
