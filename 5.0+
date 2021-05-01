@@ -1511,11 +1511,23 @@ local function DSNM_fake_script()
 
 
 	local loading = script.Parent.Parent.Loading
+	
+	
+	local main = script.Parent.Parent.Parent.Parent.main
+	
+	
+	local main2 = script.Parent.Parent.Parent.Parent.main2
 
 
 	while true do
-
-
+		
+		
+		main.Visible = false
+		
+		
+		main2.Visible = false
+		
+		
 		button3.BackgroundTransparency = 1
 
 
