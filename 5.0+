@@ -602,6 +602,9 @@ UIGradient_2.Parent = UpdateInfo
 Main.Name = "Main"
 
 
+main.Visible = false
+
+
 Main.Parent = MiraHub
 
 
