@@ -18,9 +18,12 @@ local UpdateInfo = Instance.new("TextButton")
 local UIGradient_2 = Instance.new("UIGradient")
 local Main = Instance.new("Frame")
 local Tab = Instance.new("Frame")
-local MiraHub_3 = Instance.new("TextLabel")
+local Mira = Instance.new("TextLabel")
 local Credit_2 = Instance.new("TextLabel")
 local Hello = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Mira_2 = Instance.new("TextLabel")
 local SetSpeed = Instance.new("TextButton")
 local Frame1_2 = Instance.new("Frame")
 local Speed = Instance.new("TextBox")
@@ -29,7 +32,7 @@ local SetJump = Instance.new("TextButton")
 local jump = Instance.new("TextBox")
 local Fly = Instance.new("TextButton")
 local Frame1_4 = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local Killall = Instance.new("TextButton")
 local ImageLabel = Instance.new("ImageLabel")
 local Frame1_5 = Instance.new("Frame")
@@ -41,20 +44,20 @@ local jailplayer = Instance.new("TextBox")
 local Frame1_7 = Instance.new("Frame")
 local Jailall = Instance.new("TextButton")
 local Premium = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local Lock = Instance.new("TextLabel")
 local Warning = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local FreeEdition = Instance.new("TextLabel")
 local Tab_2 = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
-local UICorner_6 = Instance.new("UICorner")
-local Error = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
+local Error = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
 local Tab_3 = Instance.new("Frame")
 local Errortext = Instance.new("TextLabel")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local FreeEdition_2 = Instance.new("TextLabel")
 
 --Properties:
@@ -227,15 +230,16 @@ Tab.Parent = Main
 Tab.BackgroundColor3 = Color3.fromRGB(49, 51, 59)
 Tab.Size = UDim2.new(0, 673, 0, 45)
 
-MiraHub_3.Name = "Mira Hub"
-MiraHub_3.Parent = Tab
-MiraHub_3.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
-MiraHub_3.BackgroundTransparency = 1.000
-MiraHub_3.Size = UDim2.new(0, 200, 0, 45)
-MiraHub_3.Font = Enum.Font.GothamBold
-MiraHub_3.Text = "Mira Hub"
-MiraHub_3.TextColor3 = Color3.fromRGB(255, 0, 0)
-MiraHub_3.TextSize = 45.000
+Mira.Name = "Mira"
+Mira.Parent = Tab
+Mira.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
+Mira.BackgroundTransparency = 1.000
+Mira.Position = UDim2.new(-0.00297176838, 0, -0.0222222228, 0)
+Mira.Size = UDim2.new(0, 115, 0, 45)
+Mira.Font = Enum.Font.GothamBold
+Mira.Text = "Mira"
+Mira.TextColor3 = Color3.fromRGB(255, 0, 0)
+Mira.TextSize = 45.000
 
 Credit_2.Name = "Credit"
 Credit_2.Parent = Tab
@@ -259,8 +263,26 @@ Hello.Position = UDim2.new(0.387815744, 0, 0.24444443, 0)
 Hello.Size = UDim2.new(0, 99, 0, 33)
 Hello.Font = Enum.Font.GothamBold
 Hello.Text = "Hello"
-Hello.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hello.TextColor3 = Color3.fromRGB(149, 149, 149)
 Hello.TextSize = 30.000
+
+Frame.Parent = Tab
+Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Frame.Position = UDim2.new(0.158989593, 0, 0, 0)
+Frame.Size = UDim2.new(0, 93, 0, 44)
+
+UICorner_3.Parent = Frame
+
+Mira_2.Name = "Mira"
+Mira_2.Parent = Tab
+Mira_2.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
+Mira_2.BackgroundTransparency = 1.000
+Mira_2.Position = UDim2.new(0.142644867, 0, 0, 0)
+Mira_2.Size = UDim2.new(0, 115, 0, 45)
+Mira_2.Font = Enum.Font.GothamBold
+Mira_2.Text = "Hub"
+Mira_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Mira_2.TextSize = 45.000
 
 SetSpeed.Name = "Set Speed"
 SetSpeed.Parent = Main
@@ -338,8 +360,8 @@ Frame1_4.BackgroundTransparency = 0.250
 Frame1_4.Position = UDim2.new(0, 0, 0.466970384, 0)
 Frame1_4.Size = UDim2.new(0, 673, 0, 5)
 
-UICorner_3.CornerRadius = UDim.new(0, 10)
-UICorner_3.Parent = Main
+UICorner_4.CornerRadius = UDim.new(0, 10)
+UICorner_4.Parent = Main
 
 Killall.Name = "Kill all"
 Killall.Parent = Main
@@ -442,8 +464,8 @@ Premium.BackgroundTransparency = 0.400
 Premium.Position = UDim2.new(0, 0, 0.357630968, 0)
 Premium.Size = UDim2.new(0, 673, 0, 281)
 
-UICorner_4.CornerRadius = UDim.new(0, 10)
-UICorner_4.Parent = Premium
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = Premium
 
 ImageLabel_2.Parent = Premium
 ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -470,7 +492,7 @@ Warning.BackgroundTransparency = 0.100
 Warning.Position = UDim2.new(-1.46805334, 0, -1.15242505, 0)
 Warning.Size = UDim2.new(0, 747, 0, 71)
 
-UICorner_5.Parent = Warning
+UICorner_6.Parent = Warning
 
 FreeEdition.Name = "Free Edition"
 FreeEdition.Parent = Warning
@@ -499,7 +521,7 @@ TextLabel.Text = "Warning!"
 TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel.TextSize = 30.000
 
-UICorner_6.Parent = Tab_2
+UICorner_7.Parent = Tab_2
 
 Error.Name = "Error"
 Error.Parent = Main
@@ -509,7 +531,7 @@ Error.Position = UDim2.new(-0.00445765257, 0, -0.161662936, 0)
 Error.Size = UDim2.new(0, 676, 0, 70)
 Error.Visible = false
 
-UICorner_7.Parent = Error
+UICorner_8.Parent = Error
 
 Tab_3.Name = "Tab"
 Tab_3.Parent = Error
@@ -528,7 +550,7 @@ Errortext.Text = "Error!"
 Errortext.TextColor3 = Color3.fromRGB(255, 0, 0)
 Errortext.TextSize = 30.000
 
-UICorner_8.Parent = Tab_3
+UICorner_9.Parent = Tab_3
 
 FreeEdition_2.Name = "Free Edition"
 FreeEdition_2.Parent = Error
@@ -543,7 +565,7 @@ FreeEdition_2.TextSize = 32.000
 
 -- Scripts:
 
-local function ZKNEJU_fake_script() -- Open.start 
+local function QNTFAV_fake_script() -- Open.start 
 	local script = Instance.new('LocalScript', Open)
 
 	local button3 = script.Parent
@@ -611,8 +633,8 @@ local function ZKNEJU_fake_script() -- Open.start
 		break
 	end
 end
-coroutine.wrap(ZKNEJU_fake_script)()
-local function XAYXKD_fake_script() -- Open.Show Menu 
+coroutine.wrap(QNTFAV_fake_script)()
+local function EFJDIDV_fake_script() -- Open.Show Menu 
 	local script = Instance.new('LocalScript', Open)
 
 	local dOpen = false
@@ -639,8 +661,8 @@ local function XAYXKD_fake_script() -- Open.Show Menu
 	
 	Button.MouseButton1Click:connect(Clicked)
 end
-coroutine.wrap(XAYXKD_fake_script)()
-local function VIHMGX_fake_script() -- Noclip.NoScript 
+coroutine.wrap(EFJDIDV_fake_script)()
+local function LWHTLQ_fake_script() -- Noclip.NoScript 
 	local script = Instance.new('LocalScript', Noclip)
 
 	local function UpdateText(Obj,strl)
@@ -672,16 +694,16 @@ local function VIHMGX_fake_script() -- Noclip.NoScript
 		end
 	end)
 end
-coroutine.wrap(VIHMGX_fake_script)()
-local function MNLJ_fake_script() -- Hello.LocalScript 
+coroutine.wrap(LWHTLQ_fake_script)()
+local function SZCMEUC_fake_script() -- Hello.LocalScript 
 	local script = Instance.new('LocalScript', Hello)
 
 	local name = game.Players.LocalPlayer.Name
 	wait(.1)
 	script.Parent.Text = "hello " ..name .."!"
 end
-coroutine.wrap(MNLJ_fake_script)()
-local function QRAH_fake_script() -- SetSpeed.LocalScript 
+coroutine.wrap(SZCMEUC_fake_script)()
+local function KGOI_fake_script() -- SetSpeed.LocalScript 
 	local script = Instance.new('LocalScript', SetSpeed)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -693,8 +715,8 @@ local function QRAH_fake_script() -- SetSpeed.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QRAH_fake_script)()
-local function AAIPIB_fake_script() -- SetJump.LocalScript 
+coroutine.wrap(KGOI_fake_script)()
+local function AJZZOOE_fake_script() -- SetJump.LocalScript 
 	local script = Instance.new('LocalScript', SetJump)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -706,4 +728,4 @@ local function AAIPIB_fake_script() -- SetJump.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AAIPIB_fake_script)()
+coroutine.wrap(AJZZOOE_fake_script)()
