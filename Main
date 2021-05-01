@@ -8,8 +8,10 @@ local de_dollie = Instance.new("TextLabel")
 local Open = Instance.new("TextButton")
 local Main = Instance.new("Frame")
 local Tab = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
+local MiraHub_3 = Instance.new("TextLabel")
+local Credit_2 = Instance.new("TextLabel")
+local Hello = Instance.new("TextLabel")
+local name = Instance.new("TextLabel")
 local SetSpeed = Instance.new("TextButton")
 local Frame1 = Instance.new("Frame")
 local Speed = Instance.new("TextBox")
@@ -33,6 +35,19 @@ local Premium = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local Lock = Instance.new("TextLabel")
+local Warning = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local FreeEdition = Instance.new("TextLabel")
+local Tab_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Main2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Noclip = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+local Frame1_7 = Instance.new("Frame")
+local Version = Instance.new("TextLabel")
+local UpdateInfo = Instance.new("TextButton")
+local UIGradient_2 = Instance.new("UIGradient")
 
 MiraHub.Name = "Mira Hub"
 MiraHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -87,7 +102,7 @@ de_dollie.BorderSizePixel = 0
 de_dollie.Position = UDim2.new(0.342530489, 0, 0.227484107, 0)
 de_dollie.Size = UDim2.new(0.629048109, 0, 0.28452602, 0)
 de_dollie.Font = Enum.Font.GothamSemibold
-de_dollie.Text = "By: de_dollie"
+de_dollie.Text = "executed script"
 de_dollie.TextColor3 = Color3.fromRGB(255, 255, 255)
 de_dollie.TextScaled = true
 de_dollie.TextSize = 14.000
@@ -97,10 +112,10 @@ de_dollie.TextXAlignment = Enum.TextXAlignment.Left
 Open.Name = "Open"
 Open.Parent = Credit
 Open.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
-Open.Position = UDim2.new(0.596793354, 0, 0.357335389, 0)
-Open.Size = UDim2.new(0, 113, 0, 25)
+Open.Position = UDim2.new(0.596793354, 0, 0.225412637, 0)
+Open.Size = UDim2.new(0, 114, 0, 45)
 Open.Font = Enum.Font.GothamSemibold
-Open.Text = "3.0"
+Open.Text = "Open"
 Open.TextColor3 = Color3.fromRGB(255, 255, 255)
 Open.TextSize = 33.000
 
@@ -108,35 +123,60 @@ Main.Name = "Main"
 Main.Parent = MiraHub
 Main.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
 Main.BackgroundTransparency = 0.100
-Main.Position = UDim2.new(0.670405805, 0, 0.631175518, 0)
-Main.Size = UDim2.new(0, 673, 0, 439)
+Main.Position = UDim2.new(0.636658907, 0, 0.492333949, 0)
+Main.Size = UDim2.new(0, 673, 0, 433)
+Main.Visible = false
 
 Tab.Name = "Tab"
 Tab.Parent = Main
 Tab.BackgroundColor3 = Color3.fromRGB(49, 51, 59)
 Tab.Size = UDim2.new(0, 673, 0, 45)
 
-TextLabel.Parent = Tab
-TextLabel.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Size = UDim2.new(0, 200, 0, 45)
-TextLabel.Font = Enum.Font.GothamBold
-TextLabel.Text = "Mira Hub"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 45.000
+MiraHub_3.Name = "Mira Hub"
+MiraHub_3.Parent = Tab
+MiraHub_3.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
+MiraHub_3.BackgroundTransparency = 1.000
+MiraHub_3.Size = UDim2.new(0, 200, 0, 45)
+MiraHub_3.Font = Enum.Font.GothamBold
+MiraHub_3.Text = "Mira Hub"
+MiraHub_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+MiraHub_3.TextSize = 45.000
 
-TextLabel_2.Parent = Tab
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.75185734, 0, 0.288888901, 0)
-TextLabel_2.Size = UDim2.new(0, 161, 0, 32)
-TextLabel_2.Font = Enum.Font.GothamSemibold
-TextLabel_2.Text = "By: de_dollie"
-TextLabel_2.TextColor3 = Color3.fromRGB(158, 158, 158)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 25.000
-TextLabel_2.TextTransparency = 0.400
-TextLabel_2.TextWrapped = true
+Credit_2.Name = "Credit"
+Credit_2.Parent = Tab
+Credit_2.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
+Credit_2.BackgroundTransparency = 1.000
+Credit_2.Position = UDim2.new(0.75185734, 0, 0.288888901, 0)
+Credit_2.Size = UDim2.new(0, 161, 0, 32)
+Credit_2.Font = Enum.Font.GothamSemibold
+Credit_2.Text = "By: de_dollie"
+Credit_2.TextColor3 = Color3.fromRGB(158, 158, 158)
+Credit_2.TextScaled = true
+Credit_2.TextSize = 25.000
+Credit_2.TextTransparency = 0.400
+Credit_2.TextWrapped = true
+
+Hello.Name = "Hello"
+Hello.Parent = Tab
+Hello.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
+Hello.BackgroundTransparency = 1.000
+Hello.Position = UDim2.new(0.286775619, 0, 0.244444445, 0)
+Hello.Size = UDim2.new(0, 99, 0, 33)
+Hello.Font = Enum.Font.GothamBold
+Hello.Text = "Hello"
+Hello.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hello.TextSize = 30.000
+
+name.Name = "name"
+name.Parent = Tab
+name.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
+name.BackgroundTransparency = 1.000
+name.Position = UDim2.new(0.448736966, 0, 0.24444446, 0)
+name.Size = UDim2.new(0, 99, 0, 33)
+name.Font = Enum.Font.GothamBold
+name.Text = "Loading..."
+name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.TextSize = 30.000
 
 SetSpeed.Name = "Set Speed"
 SetSpeed.Parent = Main
@@ -339,42 +379,136 @@ Lock.Text = "Can't Use it in free edition"
 Lock.TextColor3 = Color3.fromRGB(255, 255, 255)
 Lock.TextSize = 29.000
 
--- Scripts:
+Warning.Name = "Warning"
+Warning.Parent = Main
+Warning.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
+Warning.BackgroundTransparency = 0.100
+Warning.Position = UDim2.new(-0.989598751, 0, -1.20323336, 0)
+Warning.Size = UDim2.new(0, 747, 0, 71)
 
-local function FDDS_fake_script() -- Open.LocalScript 
+UICorner_4.Parent = Warning
+
+FreeEdition.Name = "Free Edition"
+FreeEdition.Parent = Warning
+FreeEdition.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FreeEdition.BackgroundTransparency = 1.000
+FreeEdition.Position = UDim2.new(0.0548862144, 0, 0.513740659, 0)
+FreeEdition.Size = UDim2.new(0, 679, 0, 33)
+FreeEdition.Font = Enum.Font.Roboto
+FreeEdition.Text = "You using the free edition! a lot of options locked for you."
+FreeEdition.TextColor3 = Color3.fromRGB(0, 0, 0)
+FreeEdition.TextSize = 32.000
+
+Tab_2.Name = "Tab"
+Tab_2.Parent = Warning
+Tab_2.BackgroundColor3 = Color3.fromRGB(49, 51, 59)
+Tab_2.Size = UDim2.new(0, 746, 0, 32)
+
+TextLabel.Parent = Tab_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.32305631, 0, 0.03125, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 31)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "Warning!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextSize = 30.000
+
+Main2.Name = "Main2"
+Main2.Parent = MiraHub
+Main2.BackgroundColor3 = Color3.fromRGB(30, 31, 36)
+Main2.BackgroundTransparency = 0.100
+Main2.Position = UDim2.new(0.636658907, 0, 0.861158431, 0)
+Main2.Size = UDim2.new(0, 673, 0, 59)
+Main2.Visible = false
+
+UICorner_5.CornerRadius = UDim.new(0, 10)
+UICorner_5.Parent = Main2
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Main2
+Noclip.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
+Noclip.BackgroundTransparency = 0.600
+Noclip.Position = UDim2.new(1.86264515e-09, 0, 0.0715802014, 0)
+Noclip.Size = UDim2.new(0, 200, 0, 50)
+Noclip.Font = Enum.Font.Jura
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 36.000
+
+UIGradient.Parent = Noclip
+
+Frame1_7.Name = "Frame1"
+Frame1_7.Parent = Main2
+Frame1_7.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Frame1_7.BackgroundTransparency = 0.250
+Frame1_7.Position = UDim2.new(0, 0, -0.010710001, 0)
+Frame1_7.Size = UDim2.new(0, 673, 0, 5)
+
+Version.Name = "Version"
+Version.Parent = Main2
+Version.BackgroundColor3 = Color3.fromRGB(56, 58, 67)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0.75185734, 0, 0.288888901, 0)
+Version.Size = UDim2.new(0, 161, 0, 32)
+Version.Font = Enum.Font.GothamSemibold
+Version.Text = "Version: 5.0"
+Version.TextColor3 = Color3.fromRGB(158, 158, 158)
+Version.TextScaled = true
+Version.TextSize = 25.000
+Version.TextTransparency = 0.400
+Version.TextWrapped = true
+
+UpdateInfo.Name = "Update Info"
+UpdateInfo.Parent = Main2
+UpdateInfo.BackgroundColor3 = Color3.fromRGB(48, 50, 58)
+UpdateInfo.BackgroundTransparency = 0.600
+UpdateInfo.Position = UDim2.new(0.313521534, 0, 0.0715802014, 0)
+UpdateInfo.Size = UDim2.new(0, 200, 0, 50)
+UpdateInfo.Font = Enum.Font.Jura
+UpdateInfo.Text = "Update Info"
+UpdateInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateInfo.TextSize = 36.000
+
+UIGradient_2.Parent = UpdateInfo
+
+local function ISRKIHT_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
-	-- HOW TO DO --
-	-- 1. Insert a ScreenGui then drag it into the StarterGui
-	-- 2. Insert a Frame
-	-- 3. Insert TextButton
-	-- 4. Insert a Local Script inside the TextButton
-	
-	-- LocalScript:
-	
-	local Open = false
+	local dOpen = false
 	local Frame = script.Parent.Parent.Parent.Main
 	local Button = script.Parent
+	local Frame2 = script.Parent.Parent.Parent.Main2
 	
 	function Clicked()
-		if Open == false then
-			Open = true
+		if dOpen == false then
+			dOpen = true
 			Frame.Visible = true
+			Frame2.Visible = true
 			Frame.BackgroundTransparency = 0.1
-			Button.Text = "Close" -- Closes the Frame
-		elseif Open == true then
-			Open = false
+			Button.Text = "Close"
+		elseif dOpen == true then
+			dOpen = false
 			Frame.Visible = false
+			Frame2.Visible = false
 			Frame.BackgroundTransparency = 0.1
-			Button.Text = "Open" -- Opens the Frame
+			Button.Text = "Open"
 		end
 	end
 	
 	
 	Button.MouseButton1Click:connect(Clicked)
 end
-coroutine.wrap(FDDS_fake_script)()
-local function AHNT_fake_script() -- SetSpeed.LocalScript 
+coroutine.wrap(ISRKIHT_fake_script)()
+local function ZHIPUG_fake_script()
+	local script = Instance.new('LocalScript', name)
+
+	local name = game.Players.LocalPlayer.Name
+	wait(.1)
+	script.Parent.Text = name .."!"
+end
+coroutine.wrap(ZHIPUG_fake_script)()
+local function UNPFU_fake_script()
 	local script = Instance.new('LocalScript', SetSpeed)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -386,8 +520,8 @@ local function AHNT_fake_script() -- SetSpeed.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AHNT_fake_script)()
-local function LXTRPAN_fake_script() -- SetJump.LocalScript 
+coroutine.wrap(UNPFU_fake_script)()
+local function PPHMXAQ_fake_script()
 	local script = Instance.new('LocalScript', SetJump)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -399,4 +533,37 @@ local function LXTRPAN_fake_script() -- SetJump.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LXTRPAN_fake_script)()
+coroutine.wrap(PPHMXAQ_fake_script)()
+local function BSXLBOA_fake_script()
+	local script = Instance.new('LocalScript', Noclip)
+
+	local function UpdateText(Obj,strl)
+		Obj.Text = strl
+	end
+	local On = false
+	local function SetOn()
+		if On == false then
+			On = true
+		else
+			On = false
+		end
+	end
+	local Player = game.Players.LocalPlayer
+	local Button = script.Parent
+	
+	Button.MouseButton1Up:Connect(function()
+		SetOn()
+		if On then
+			UpdateText(Button, "Unnoclip")
+		else
+		UpdateText(Button, "Noclip")
+		end
+		while On do
+			wait()
+			pcall(function()
+				Player.Character.Humanoid:ChangeState(11)
+			end)
+		end
+	end)
+end
+coroutine.wrap(BSXLBOA_fake_script)()
